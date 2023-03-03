@@ -560,6 +560,14 @@ img {
   padding: 1.5rem;
   border-radius: .5rem;
 }
+.services__modal-services{
+  display: flex;
+}
+.services__modal-title{
+  font-size: var(--h3-font-size);
+  font-weight:var(--font-medium);
+  margin-bottom: var(--mb-1-5);
+}
 /* Active Modal */
 
 
