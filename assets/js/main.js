@@ -1,3 +1,42 @@
+<<<<<<< HEAD
+=======
+// Formspree code
+const form = document.getElementById("contact-form");
+
+async function handleSubmit(event) {
+    event.preventDefault();
+    var status = document.getElementById("alert");
+    var data = new FormData(event.target);
+    fetch(event.target.action, {
+            method: form.method,
+            body: data,
+            headers: {
+                Accept: "application/json",
+            },
+        })
+        .then((response) => {
+            status.innerHTML = "Your message has been sent.";
+            document.querySelector(".alert_style").style.display = "block";
+
+            // hide alert after 3 seconds
+            setTimeout(function() {
+                document.querySelector(".alert_style").style.display = "none";
+            }, 4000);
+            form.reset();
+        })
+        .catch((error) => {
+            status.innerHTML = "Oops! There was a problem delivering your message, please contact via other means.";
+            document.querySelector(".alert_style").style.display = "block";
+
+            // hide alert after 3 seconds
+            setTimeout(function() {
+                document.querySelector(".alert_style").style.display = "none";
+            }, 4000);
+        });
+}
+form.addEventListener("submit", handleSubmit);
+
+>>>>>>> 61baf70 ( third commit)
 /*==================== MENU SHOW Y HIDDEN ====================*/
 const navMenu = document.getElementById('nav-menu'),
     navToggle = document.getElementById('nav-toggle'),
@@ -67,21 +106,130 @@ tabs.forEach(tab =>{
 })
 
 /*==================== SERVICES MODAL ====================*/
+<<<<<<< HEAD
 
 
 /*==================== PORTFOLIO SWIPER  ====================*/
+=======
+const modalViews = document.querySelectorAll('.services__modal'),
+      modalBtns = document.querySelectorAll('service__button'),
+      modalCloses = document.querySelectorAll('service__modal-close')
+    
+let modal = function(modalClick){
+    modalViews[modalClick].classList.add('active-modal')
+}
+
+modalBtns.forEach((modalBtn, i) => {
+    modalBtn.addEventListener('click', () =>{
+        modal(i)
+    })
+})  
+
+modalCloses.forEach((modalClose) => {
+    modalClose.addEventListener('click', () =>{
+         modalViews.forEach((modalView) =>{
+             modalView.classList.remove('active-modal')
+        })
+    })
+})   
+/*==================== PORTFOLIO SWIPER  ====================*/
+let swiper = new Swiper(".mySwiper", {
+    cssMode: true,
+    loop: true,
+
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+    },
+    mousewheel: true,
+    keyboard: true,
+});
+>>>>>>> 61baf70 ( third commit)
 
 
 /*==================== TESTIMONIAL ====================*/
 
 
 /*==================== SCROLL SECTIONS ACTIVE LINK ====================*/
+<<<<<<< HEAD
 
+=======
+const sections = document.querySelectorAll("section[id]");
+
+function scrollActive() {
+    const scrollY = window.pageYOffset;
+
+    sections.forEach((current) => {
+        const sectionHeight = current.offsetHeight;
+        const sectionTop = current.offsetTop - 50;
+        let sectionId = current.getAttribute("id");
+
+        if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
+            document
+                .querySelector(".nav_menu a[href*=" + sectionId + "]")
+                .classList.add("active-link");
+        } else {
+            document
+                .querySelector(".nav_menu a[href*=" + sectionId + "]")
+                .classList.remove("active-link");
+        }
+    });
+}
+window.addEventListener("scroll", scrollActive);
+>>>>>>> 61baf70 ( third commit)
 
 /*==================== CHANGE BACKGROUND HEADER ====================*/ 
 
 
 /*==================== SHOW SCROLL UP ====================*/ 
+<<<<<<< HEAD
 
 
 /*==================== DARK LIGHT THEME ====================*/ 
+=======
+function scrollUpfunc() {
+    const scrollUp = document.getElementById("scroll-up");
+    if (this.scrollY >= 560) scrollUp.classList.add("show-scroll");
+    else scrollUp.classList.remove("show-scroll");
+}
+window.addEventListener("scroll", scrollUpfunc);
+
+/*==================== DARK LIGHT THEME ====================*/ 
+const themeButton = document.getElementById("theme-button");
+const darkTheme = "dark-theme";
+const iconTheme = "uil-sun";
+
+// Previously selected topic (if user selected)
+const selectedTheme = localStorage.getItem("selected-theme");
+const selectedIcon = localStorage.getItem("selected-icon");
+
+// obtain the current theme
+const getCurrentTheme = () =>
+    document.body.classList.contains(darkTheme) ?  "light": "dark";
+const getCurrentIcon = () =>
+    themeButton.classList.contains(iconTheme) ? "uil-moon" : "uil-sun";
+
+if (selectedTheme) {
+    
+    themeButton.classList[selectedIcon === "uil-moon" ? "add" : "remove"](
+        iconTheme
+    );
+    document.body.classList[selectedTheme === "dark" ? "add" : "remove"](
+        darkTheme 
+    );
+}
+
+// Activate/Deactivate the theme manually with the button
+themeButton.addEventListener("click", () => {
+    // Add or remove the dark icon/theme
+    document.body.classList.toggle(darkTheme);
+    themeButton.classList.toggle(iconTheme);
+    // We save the theme and the current icon that the user chose
+    localStorage.setItem("selected-theme", getCurrentTheme());
+    localStorage.setItem("selected-icon", getCurrentIcon());
+});
+>>>>>>> 61baf70 ( third commit)
