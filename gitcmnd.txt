@@ -52,4 +52,3 @@ git commit -m " commit"
 git branch -M main
 git pull --rebase origin main
 git push -u origin main
->>>>>>> 61baf70 ( third commit)
