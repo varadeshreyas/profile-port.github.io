@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
 /*==================== GOOGLE FONTS ====================*/
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
 
@@ -606,9 +604,6 @@ img {
 
 
 /* For large devices */
-=======
-=======
->>>>>>> 61baf70 ( third commit)
 /*==================== GOOGLE FONTS ====================*/
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
 
@@ -1161,8 +1156,6 @@ img {
   Justify-content: center;
   padding: 0 1rem;
   z-index: var(--z-modal);
-<<<<<<< HEAD
-=======
   opacity: 0; 
   visibility: hidden; 
   transition: .3s;
@@ -2338,7 +2331,7 @@ img {
   Justify-content: center;
   padding: 0 1rem;
   z-index: var(--z-modal);
->>>>>>> 61baf70 ( third commit)
+
   /* opacity: 0; */
   /*visibility: hidden; */
   transition: .3s;
@@ -2393,7 +2386,4 @@ img {
 
 
 /* For large devices */
-<<<<<<< HEAD
->>>>>>> 55b47c2 (third commit)
-=======
->>>>>>> 61baf70 ( third commit)
+

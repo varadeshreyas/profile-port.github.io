@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 // Formspree code
 const form = document.getElementById("contact-form");
 
@@ -35,8 +33,6 @@ async function handleSubmit(event) {
         });
 }
 form.addEventListener("submit", handleSubmit);
-
->>>>>>> 61baf70 ( third commit)
 /*==================== MENU SHOW Y HIDDEN ====================*/
 const navMenu = document.getElementById('nav-menu'),
     navToggle = document.getElementById('nav-toggle'),
@@ -106,11 +102,9 @@ tabs.forEach(tab =>{
 })
 
 /*==================== SERVICES MODAL ====================*/
-<<<<<<< HEAD
 
 
 /*==================== PORTFOLIO SWIPER  ====================*/
-=======
 const modalViews = document.querySelectorAll('.services__modal'),
       modalBtns = document.querySelectorAll('service__button'),
       modalCloses = document.querySelectorAll('service__modal-close')
@@ -148,16 +142,10 @@ let swiper = new Swiper(".mySwiper", {
     mousewheel: true,
     keyboard: true,
 });
->>>>>>> 61baf70 ( third commit)
-
-
 /*==================== TESTIMONIAL ====================*/
 
 
 /*==================== SCROLL SECTIONS ACTIVE LINK ====================*/
-<<<<<<< HEAD
-
-=======
 const sections = document.querySelectorAll("section[id]");
 
 function scrollActive() {
@@ -180,17 +168,12 @@ function scrollActive() {
     });
 }
 window.addEventListener("scroll", scrollActive);
->>>>>>> 61baf70 ( third commit)
-
 /*==================== CHANGE BACKGROUND HEADER ====================*/ 
 
 
 /*==================== SHOW SCROLL UP ====================*/ 
-<<<<<<< HEAD
-
 
 /*==================== DARK LIGHT THEME ====================*/ 
-=======
 function scrollUpfunc() {
     const scrollUp = document.getElementById("scroll-up");
     if (this.scrollY >= 560) scrollUp.classList.add("show-scroll");
@@ -232,4 +215,3 @@ themeButton.addEventListener("click", () => {
     localStorage.setItem("selected-theme", getCurrentTheme());
     localStorage.setItem("selected-icon", getCurrentIcon());
 });
->>>>>>> 61baf70 ( third commit)
