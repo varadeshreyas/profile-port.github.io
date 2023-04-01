@@ -102,12 +102,9 @@ tabs.forEach(tab =>{
 })
 
 /*==================== SERVICES MODAL ====================*/
-
-
-/*==================== PORTFOLIO SWIPER  ====================*/
 const modalViews = document.querySelectorAll('.services__modal'),
-      modalBtns = document.querySelectorAll('service__button'),
-      modalCloses = document.querySelectorAll('service__modal-close')
+      modalBtns = document.querySelectorAll('.service__button'),
+      modalCloses = document.querySelectorAll('.service__modal-close')
     
 let modal = function(modalClick){
     modalViews[modalClick].classList.add('active-modal')
@@ -127,7 +124,7 @@ modalCloses.forEach((modalClose) => {
     })
 })   
 /*==================== PORTFOLIO SWIPER  ====================*/
-let swiper = new Swiper(".mySwiper", {
+let swiper = new Swiper(".portfolio__container", {
     cssMode: true,
     loop: true,
 

@@ -493,7 +493,7 @@ img {
   background-color: var(--first-color);
   transform: translate(6px, -7px);
 }
-.qualification [data-content]{
+.qualification[data-content]{
   display: none;
 }
 .qualification__active[data-content]{
@@ -547,30 +547,33 @@ img {
   background-color: rgba(0,0,0,.5);
   display: flex;
   align-items: center;
-  Justify-content: center;
+  justify-content: center;
   padding: 0 1rem;
   z-index: var(--z-modal);
-  /* opacity: 0; */
-  /*visibility: hidden; */
+  opacity: 0; 
+  visibility: hidden; 
   transition: .3s;
 }
 .services__modal-content{
-  position:relative;
+  position:  relative;
   background-color: var(--container-color);
   padding: 1.5rem;
   border-radius: .5rem;
+}
+.services__modal-services{
+ row-gap: 1rem;
 }
 .services__modal-services{
   display: flex;
 }
 .services__modal-title{
   font-size: var(--h3-font-size);
-  font-weight:var(--font-medium);
+  font-weight: var(--font-medium);
   margin-bottom: var(--mb-1-5);
 }
 .services__modal-close{
   position: absolute;
-  top:1rem;
+  top: 1rem;
   right: 1rem;
   font-size: 1.5rem;
   color: var(--first-color);
@@ -580,6 +583,7 @@ img {
   color: var(--first-color);
   margin-right: var(--mb-0-25);
 }
+
 /* Active Modal */
 .active-modal{
   opacity: 1;
@@ -594,7 +598,7 @@ img {
 }
 
 .portfolio__content {
-  padding: 0 2.5rem;
+  padding: 0 1.5rem;
 }
 
 .portfolio__img {
@@ -612,7 +616,7 @@ img {
   margin-bottom: var(--mb-0-75);
 }
 
-.portfolio__button:hover .button_icon {
+.portfolio__button:hover .button__icon {
   transform: translateX(0.25rem);
 }
 
@@ -654,6 +658,7 @@ img {
 
 /*==================== TESTIMONIAL ====================*/
 
+/*==================== CONTACT ME ====================*/
 .contact_container {
   row-gap: 3rem;
 }
@@ -817,6 +822,8 @@ img {
 }
 
 /*==================== MEDIA QUERIES ====================*/
+
+
 /* For small devices */
 
 @media screen and (max-width: 350px) {
@@ -1169,4 +1176,3 @@ img {
       animation: sequencePopup 12s linear infinite;
   }
 }
-/*==================== CONTACT ME ====================*/
