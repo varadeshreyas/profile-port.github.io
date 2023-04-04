@@ -24,7 +24,7 @@
                 <div class="nav__menu" id="nav-menu"> 
                     <u1 class="nav__list grid">
                     <li class="nav__item">
-                        <a href="#home" class="nav__link">
+                        <a href="#home" class="nav__link active-link">
                             <i class="uil uil-estate nav__icon"></i> Home 
                        </a>
                     </li>
@@ -57,6 +57,8 @@
                     <i class="uil uil-times nav__close" id="nav-close"></i>
                 </div>
                 <div class="nav__btns">
+                    <!--Theme change button-->
+                    <i class="uil uil-moon change-theme" id="theme-button"></i>
                     <div class="nav__toggles" id="nav-toggle">
                         <i class="uil uil-apps"></i>                      
                     </div>
@@ -421,8 +423,8 @@
 
             <!--==================== PORTFOLIO ====================-->
             <section class="portfolio section" id="portfolio">
-                <h2 class="section__title"></h2>
-                <span class="section__subtitle">Recent work</span>
+                <h2 class="section__title">Recent work</h2>
+                <span class="section__subtitle"></span>
                 <div class="portfolio__container container swiper-container">
                     <div class="swiper-wrapper">
                         <div>
@@ -577,59 +579,75 @@
 
             <!--==================== CONTACT ME ====================-->
             <section class="contact section" id="contact">
-            <h1 class="section_title">Contact Me</h1>
-            <span class="section_subtitle">
+            <h1 class="section__title">Contact Me</h1>
+            <span class="section__subtitle">
                  Wish to connect? My inbox is always open!
             </span>
-            <div class="contact_container container grid">
+                <div class="contact__container container grid">
                 <div>
-                    <a href="mailto:shreyasvarade0201@gmail.com" target="_blank">
-                        <div class="contact_info">
-                            <i class="uil uil-envelope-alt contact_icon"></i>
+                    <div>
+                        <div class="contact__information">
+                            <i class="uil uil-phone contact__icon"></i>
                             <div>
-                                <h3 class="contact_title">Email</h3>
-                                <span class="contact_subtitle">shreyasvarade0201@gmail.com</span>
+                                <h3 class="contact__title">Phone</h3>
+                                <span class="contact__subtitle">+91 8446948154</span>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="mailto:shreyasvarade0201@gmail.com" target="_blank">
+                        <div class="contact__information">
+                            <i class="uil uil-envelope-alt contact__icon"></i>
+                            <div>
+                                <h3 class="contact__title">Email</h3>
+                                <span class="contact__subtitle">shreyasvarade0201@gmail.com</span>
                             </div>
                         </div>
                     </a>
 
                     <a href="https://twitter.com/shreyasvarade2" target="_blank">
-                        <div class="contact_info">
-                            <i class="uil uil-twitter-alt contact_icon"></i>
+                        <div class="contact__information">
+                            <i class="uil uil-twitter-alt contact__icon"></i>
                             <div>
-                                <h3 class="contact_title">Twitter</h3>
-                                <span class="contact_subtitle">@shreyasvarade2</span>
+                                <h3 class="contact__title">Twitter</h3>
+                                <span class="contact__subtitle">@shreyasvarade2</span>
                             </div>
                         </div>
                     </a>
+                    <div class="contact__information">
+                        <i class="uil uil-map-marker contact__icon"></i>
+                        <div>
+                        <h3 class="contact__title">Location</h3>
+                        <span class="contact__subtitle">Pune, MH, IN</span>
+                        </div>
+                    </div> 
                 </div>
 
-                <form action="https://formspree.io/" class="contact_form grid" id="contact-form" method="POST">
-                    <div id="alert" class="alert_style"></div>
-                    <div class="contact_inputs grid">
-                        <div class="contact_content">
-                            <label class="contact_label">Name</label>
-                            <input type="text" name="name" class="contact_input" id="name" required>
+                <form action="https://formspree.io/" class="contact__form grid" id="contact--form" method="POST">
+                    <div id="alert" class="alert__style"></div>
+                    <div class="contact__input grid">
+                        <div class="contact__content">
+                            <label for="" class="contact__label">Name</label>
+                            <input type="text" name="name" class="contact__input" id="name" required>
                         </div>
-                        <div class="contact_content">
-                            <label for="email" class="contact_label">Email</label>
-                            <input type="email" name="email" class="contact_input" id="email" required>
+                        <div class="contact__content">
+                            <label for="email" class="contact__label">Email</label>
+                            <input type="email" name="email" class="contact__input" id="email" required>
                         </div>
                     </div>
-                    <div class="contact_content">
-                        <label for="subject" class="contact_label">Subject</label>
-                        <input type="text" name="subject" class="contact_input" id="subject" required>
+                    <div class="contact__content">
+                        <label for="subject" class="contact__label">Subject</label>
+                        <input type="text" name="subject" class="contact__input" id="subject" required>
                     </div>
-                    <div class="contact_content">
-                        <label for="message" class="contact_label">Message</label>
-                        <textarea name="message" id="" cols="0" rows="7" class="contact_input message" id="message" required></textarea>
+                    <div class="contact__content">
+                        <label for="message" class="contact__label">Message</label>
+                        <textarea name="message" id="" cols="0" rows="7" class="contact__input message" id="message" required></textarea>
                     </div>
 
                     <div>
-                        <button type="submit" class="button button-flex">
-              Send Message
-              <i class="uil uil-message button_icon"></i>
-            </button>
+                        <button type="submit" class="button button--flex">
+                            Send Message
+                             <i class="uil uil-message button__icon"></i>
+                         </button>
                     </div>
                 </form>
 
@@ -639,52 +657,52 @@
 
         <!--==================== FOOTER ====================-->
         <footer class="footer">
-            <div class="footer_bg">
-                <div class="footer_container container grid">
+            <div class="footer__bg">
+                <div class="footer__container container grid">
                     <div>
-                        <h1 class="footer_title">Shreyas Varade</h1>
-                        <span class="footer_subtitle"><b>Student at Vishwakarma University</b><br>Pune, Maharashtra, India</span>
+                        <h1 class="footer__title">Shreyas Varade</h1>
+                        <span class="footer__subtitle"><b>Student at Vishwakarma University</b><br>Pune, Maharashtra, India</span>
                     </div>
     
-                    <ul class="footer_links">
+                    <ul class="footer__links">
                         <li>
-                            <a href="#about" class="footer_link">About</a>
+                            <a href="#about" class="footer__link">About</a>
                         </li>
                         <li>
-                            <a href="#projects" class="footer_link">Projects</a>
+                            <a href="#portfolio" class="footer__link">Projects</a>
                         </li>
                         <li>
-                            <a href="#contact" class="footer_link">Contact Me</a>
+                            <a href="#contact" class="footer__link">Contact Me</a>
                         </li>
                     </ul>
     
-                    <div class="footer_socials">
-                        <a href="https://www.linkedin.com/in/shreyas-varade" class="footer_social" target="_blank">
+                    <div class="footer__socials">
+                        <a href="https://www.linkedin.com/in/shreyas-varade" class="footer__social" target="_blank">
                             <i class="uil uil-linkedin-alt"></i>
                         </a>
     
-                        <a href="https://github.com/shreyas0201" class="footer_social" target="_blank">
+                        <a href="https://github.com/shreyas0201" class="footer__social" target="_blank">
                             <i class="uil uil-github-alt"></i>
                         </a>
     
-                        <a href="https://twitter.com/shreyasvarade2" class="footer_social" target="_blank">
+                        <a href="https://twitter.com/shreyasvarade2" class="footer__social" target="_blank">
                             <i class="uil uil-twitter-alt"></i>
                         </a>
     
-                        <a href="https://www.instagram.com/varade_shreyas/" class="footer_social" target="_blank">
+                        <a href="https://www.instagram.com/varade_shreyas/" class="footer__social" target="_blank">
                             <i class="uil uil-instagram"></i>
                         </a>
                         </a>
                     </div>
                 </div>
     
-                <p class="footer_copy">&#169; Shreyas Varade. All rights reserved</p>
+                <p class="footer__copy">&#169; Shreyas Varade. All rights reserved</p>
             </div>
         </footer>
         
         <!--==================== SCROLL TOP ====================-->
         <a href="#" class="scrollup" id="scroll-up">
-            <i class="uil uil-arrow-up scrollup_icon"></i>
+            <i class="uil uil-arrow-up scrollup__icon"></i>
         </a>  
 
         <!--==================== SWIPER JS ====================-->
