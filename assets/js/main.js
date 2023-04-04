@@ -50,7 +50,7 @@ if(navToggle)
 /* Validate if constant exists */
 if(navClose)
 {
-    navClose.addEventListener('click',() =>{
+    navClose.addEventListener('click', () =>{
         navMenu.classList.remove('show-menu')
     })
 }
@@ -68,7 +68,7 @@ navLink.forEach(n => n.addEventListener('click', linkAction))
 
 /*==================== ACCORDION SKILLS ====================*/
 const skillsContent = document.getElementsByClassName('skills__content'),
-       skillsHeader = document.querySelectorAll('.skills__header')
+      skillsHeader = document.querySelectorAll('.skills__header')
 
 function toggleSkills(){
     let itemClass = this.parentNode.className
@@ -82,7 +82,7 @@ function toggleSkills(){
 }
 skillsHeader.forEach((el) =>{
     el.addEventListener('click', toggleSkills)
-})
+}) 
 /*==================== QUALIFICATION TABS ====================*/
 const tabs = document.querySelectorAll('[data-target]'),
     tabContents = document.querySelectorAll('[data-content]')
