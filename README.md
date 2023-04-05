@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 ### Responsive Portfolio Website
 
@@ -9,3 +10,8 @@
 <!--- 
 ![preview img](/preview.png)
  --->
+=======
+# Personal-portfolio
+
+
+>>>>>>> 2be3668 (8)
