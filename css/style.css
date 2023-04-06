@@ -398,7 +398,7 @@ button {
 
 .about_img {
     width: 400px;
-    border-radius: 1rem;
+    border-radius: 4rem;
     justify-self: center;
     align-self: center;
 }
