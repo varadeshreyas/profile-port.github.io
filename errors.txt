@@ -1,7 +1,0 @@
-1.09.29~ data not align ork and education 
-about,alignemnt of about
-1.09.29~ data not align work and education 
-about,alignemnt of about
-
-service buttons not working
-1.25.40
